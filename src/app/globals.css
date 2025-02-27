@@ -1,0 +1,80 @@
+:root {
+  --color-light: #ffffff;
+  --color-dark: #171717;
+  --color-gray: #666;
+  --color-primary-blue: #0097fb;
+  --color-secoundry-blue: #07c;
+  --color-secoundry-light-blue: #eef2f5;
+  --color-secoundry-light: #F5F8FA;
+
+  --font-size-1: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --line-height-1: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  --font-size-2: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+  --line-height-2: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+  --font-size-3: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --line-height-3: clamp(1.5rem, 1.45rem + 0.25vw, 1.75rem);
+  --font-size-4: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+  --line-height-4: clamp(1.5rem, 1.425rem + 0.375vw, 1.75rem);
+  --font-size-5: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --line-height-5: clamp(1.75rem, 1.65rem + 0.5vw, 2rem);
+  --font-size-6: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
+  --line-height-6: clamp(2rem, 1.85rem + 0.75vw, 2.25rem);
+  --font-size-7: clamp(1.875rem, 1.65rem + 1vw, 2.25rem);
+  --line-height-7: clamp(2.25rem, 2.1rem + 0.75vw, 2.5rem);
+  --font-size-8: clamp(1.25rem, 0.5rem + 3vw, 3rem);
+  --line-height-8: clamp(2.25rem, 2rem + 1vw, 2.5rem);
+  --font-size-9: clamp(3rem, 2.25rem + 3vw, 3.75rem);
+  --line-height-larg: 1;
+  --font-size-10: clamp(3.75rem, 3rem + 3vw, 4.5rem);
+  --font-size-11: clamp(4.5rem, 3.5rem + 4vw, 6rem);
+  --font-size-12: clamp(6rem, 4rem + 8vw, 8rem);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-dark);
+    --foreground: var(--color-light);
+    --foreground-gray: var(--color-gray);
+    --foreground-primary: var(--color-primary);
+  }
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--color-light);
+    --foreground: var(--color-dark);
+    --foreground-gray: var(--color-gray);
+    --foreground-primary: var(--color-primary);
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}

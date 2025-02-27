@@ -1,0 +1,200 @@
+.LgoOutNavBarHeader {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.1px solid rgba(187, 187, 187, 0.25);
+}
+
+.LgoOutNavBarHeaderContainer {
+  width: 90%;
+  /* max-width: 1540px; */
+  max-width: 1300px;
+  height: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spaceBox {
+  flex-grow: 1;
+}
+
+.LgoOutNavBarLinks {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.LgoOutNavBarLinks a {
+  color: #222;
+  font-size: var(--font-size-2);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  padding: 0.525rem 0.75rem;
+}
+
+.LgoOutNavBarLinks a.active,
+.LgoOutNavBarLinks a:hover {
+  border-radius: 0.25rem;
+  background-color: var(--color-secoundry-light-blue);
+}
+
+@media (max-width: 920px) {
+  .LgoOutNavBarLinks {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0 0 0.5rem 0.5rem;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: #222;
+    z-index: 1000;
+  }
+
+  .LgoOutNavBarLinks.active {
+    max-height: 500px;
+    padding: 0.5rem 0;
+  }
+
+  .LgoOutNavBarLinks > a {
+    color: #fff;
+    font-size: var(--font-size-3);
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-bottom: 0.1px solid rgba(187, 187, 187, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .LgoOutNavBarLinks > a:hover,
+  .LgoOutNavBarLinks > a.active {
+    background-color: rgba(187, 187, 187, 0.05);
+  }
+
+  .LgoOutNavBarLinks .buttonGroupDropMinue {
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 0.75rem 0 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media (min-width: 500px) {
+    .LgoOutNavBarLinks .buttonGroupDropMinue {
+      display: none;
+    }
+  }
+}
+
+.LgoOutNavBarLinks .buttonGroupDropMinue > a {
+  width: 5rem;
+  padding: 0.625rem 0.75rem;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 920px) {
+  .LgoOutNavBarLinks .buttonGroupDropMinue > a {
+    display: none;
+  }
+}
+
+.LgoOutNavBarLinks .buttonGroupDropMinue > a.registerButton,
+.LgoOutNavBarRightItem .buttonGroupNavBar a.registerButton {
+  background-color: var(--color-primary-blue);
+  color: #fff;
+}
+
+.LgoOutNavBarLinks .buttonGroupDropMinue > a.loginButton,
+.LgoOutNavBarRightItem .buttonGroupNavBar a.loginButton {
+  color: #222;
+  background-color: #fff;
+}
+
+.LgoOutNavBarLinks .buttonGroupDropMinue > a.loginButton:hover,
+.LgoOutNavBarRightItem .buttonGroupNavBar a.loginButton:hover {
+  background-color: var(--color-secoundry-light-blue);
+  transform: scale(0.97);
+}
+
+.LgoOutNavBarLinks .buttonGroupDropMinue > a.registerButton:hover,
+a.registerButton,
+.LgoOutNavBarRightItem .buttonGroupNavBar a.registerButton:hover {
+  background-color: var(--color-secoundry-blue);
+  transform: scale(0.98);
+}
+
+.LgoOutNavBarRightItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.LgoOutNavBarRightItem .toggleMenue {
+  color: #222;
+  cursor: pointer;
+  font-size: var(--font-size-7);
+}
+
+@media (min-width: 920px) {
+  .LgoOutNavBarRightItem .toggleMenue {
+    display: none;
+  }
+}
+
+.LgoOutNavBarRightItem .buttonGroupNavBar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.LgoOutNavBarRightItem .buttonGroupNavBar a {
+  width: 4.5rem;
+  padding: 0.625rem 0.75rem;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -0.45rem 0.425rem 9px -3px rgba(0, 0, 0, 0.2);
+}
+
+.LgoOutNavBarRightItem .buttonGroupNavBar a.loginButton {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.LgoOutNavBarRightItem .buttonGroupNavBar a:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 500px) {
+  .LgoOutNavBarRightItem .buttonGroupNavBar {
+    display: none;
+  }
+}
