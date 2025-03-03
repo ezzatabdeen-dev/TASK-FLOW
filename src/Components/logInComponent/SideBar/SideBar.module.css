@@ -1,0 +1,16 @@
+.ContainerSideBarActive {
+    background-color: rgb(12 30 64);
+    color: #fff;
+    width: 280px;
+    height: calc(100% - 4rem);
+    transition: width var(--primary-transition3s);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    z-index: 300;
+}
+
+.ContainerSideBarUnActive {
+    transition: width var(--primary-transition3s);
+    width: 0;
+}

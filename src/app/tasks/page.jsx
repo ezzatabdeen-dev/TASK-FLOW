@@ -1,8 +1,11 @@
-import styles from './tasks.module.css'
+import styles from "./tasks.module.css";
+import { WraperPageContent } from "@/Components/index";
 
 const Tasks = () => {
-    return (
-        <h1>Tasks Page</h1>
-    )
-}
-export default Tasks
+  return (
+    <WraperPageContent>
+      <h1>Tasks Page</h1>
+    </WraperPageContent>
+  );
+};
+export default Tasks;

@@ -1,0 +1,67 @@
+.headerSideBar {
+  width: 280px;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgb(12, 30, 64);
+  padding: calc(var(--primary-spasing));
+  border-bottom: var(--devider);
+  transition: all var(--primary-transition3s);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  z-index: 300;
+}
+
+.headerSideBarClose {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: calc(var(--primary-spasing));
+  border-bottom: var(--devider);
+  transition: all var(--primary-transition3s);
+  display: flex;
+  align-items: center;
+}
+
+.headerSideBar a {
+  width: 50%;
+  height: 100%;
+  transition: all .4s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.close {
+  transition: all .4s ease-in-out;
+  width: 0;
+}
+
+.headerSideBar a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.HeaderSideBarBoxIcon {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  border-radius: 0.25rem;
+  transition: all .5s ease-in-out;
+  background-color: var(--color-primary-blue);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderSideBarIcon {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all .5s ease-in-out;
+}

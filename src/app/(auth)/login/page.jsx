@@ -2,8 +2,8 @@
 import styles from "./login.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Forms } from "../../components/index";
-import GooglePrand from "../../assets/images/google_logo-UibcS5yq.png";
+import { Forms } from "@/Components/index";
+import GooglePrand from "@/assets/images/google_logo-UibcS5yq.png";
 import { MdError } from "react-icons/md";
 import { useState } from "react";
 

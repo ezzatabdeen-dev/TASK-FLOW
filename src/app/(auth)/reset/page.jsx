@@ -1,5 +1,5 @@
 import styles from "./reset.module.css";
-import { Forms } from "../../components/index";
+import { Forms } from "@/Components/index";
 
 const reset = () => {
   return (

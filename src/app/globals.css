@@ -5,7 +5,7 @@
   --color-primary-blue: #0097fb;
   --color-secoundry-blue: #07c;
   --color-secoundry-light-blue: #eef2f5;
-  --color-secoundry-light: #F5F8FA;
+  --color-secoundry-light: #f5f8fa;
 
   --font-size-1: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
   --line-height-1: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
@@ -28,6 +28,11 @@
   --font-size-10: clamp(3.75rem, 3rem + 3vw, 4.5rem);
   --font-size-11: clamp(4.5rem, 3.5rem + 4vw, 6rem);
   --font-size-12: clamp(6rem, 4rem + 8vw, 8rem);
+
+  --primary-spasing: 1rem;
+  --primary-transition3s: .3s ease-in-out;
+
+  --devider: 0.1px solid rgba(187, 187, 187, 0.25);
 }
 
 /* @media (prefers-color-scheme: dark) {

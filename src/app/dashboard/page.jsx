@@ -1,8 +1,11 @@
 import styles from './dashboard.module.css'
+import { WraperPageContent } from '@/Components/index'
 
 const Dashboard = () => {
     return (
-        <h1>Dashboard Page</h1>
+        <WraperPageContent>
+            <h1>Dash Board Page</h1>
+        </WraperPageContent>
     )
 }
 

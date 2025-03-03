@@ -1,0 +1,26 @@
+.WraperPageContent {
+  width: 100%;
+  height: calc(100% - 4rem);
+  padding: var(--primary-spasing);
+  transition: width var(--primary-transition3s);
+  overflow-x: hidden;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+.WraperPageContentResize {
+  width: calc(100% - 280px);
+  height: calc(100% - 4rem);
+  padding: var(--primary-spasing);
+  overflow-x: hidden;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+@media (max-width: 920px) {
+  .WraperPageContentResize {
+    width: 100%;
+  }
+}

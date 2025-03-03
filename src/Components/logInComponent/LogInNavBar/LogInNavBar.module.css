@@ -1,0 +1,39 @@
+.ContainerNavBar {
+  width: calc(100% - 4rem);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: var(--primary-spasing);
+  border-bottom: var(--devider);
+  transition: all var(--primary-transition3s);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.ContainerNavBarResize {
+  transition: all var(--primary-transition3s);
+  width: calc(100% - 280px);
+}
+
+@media (max-width: 920px) {
+  .ContainerNavBarResize {
+    width: calc(100% - 4rem);
+  }
+}
+
+
+.boxBrand {
+  height: 100%;
+  transition: all var(--primary-transition3s);
+}
+
+.boxBrandHide {
+  display: none;
+}
+
+.boxBrand img {
+  width: 100%;
+  height: auto;
+}

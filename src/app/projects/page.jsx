@@ -1,8 +1,11 @@
-import styles from './projects.module.css'
+import styles from "./projects.module.css";
+import { WraperPageContent } from "@/Components/index";
 
 const projects = () => {
-    return (
-        <h1>projects Page</h1>
-    )
-}
-export default projects
+  return (
+    <WraperPageContent>
+      <h1>projects Page</h1>
+    </WraperPageContent>
+  );
+};
+export default projects;

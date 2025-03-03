@@ -1,16 +1,31 @@
-import { Hero, MainContent1, MainContent2, TextBlock } from './sections/index'
-import { FooterForm, Footer } from './components/index'
+"use client";
+import { useAppContext } from "@/Context/index";
+import { FooterForm, Footer } from "@/Components/index";
+import { Hero, MainContent1, TextBlock, MainContent2 } from "@/Sections/index";
+import Page from './dashboard/page'
 
 const Home = () => {
+  const { usLoginState } = useAppContext();
+
   return (
-    <>
-      <Hero />
-      <MainContent1 />
-      <TextBlock />
-      <MainContent2 />
-      <FooterForm />
-      <Footer />
-    </>
-  )
-}
+    <main>
+      {usLoginState 
+      ? (
+        <>
+          <Page />
+        </>
+      ) 
+      : (
+        <>
+          <Hero />
+          <MainContent1 />
+          <TextBlock />
+          <MainContent2 />
+          <FooterForm />
+          <Footer />
+        </>
+      )}
+    </main>
+  );
+};
 export default Home;
